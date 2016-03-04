@@ -1,0 +1,39 @@
+footer[role="site-info"] {
+position: fixed;
+bottom: 0px;
+width: 190px;
+padding: 0 10px 20px 30px;
+z-index: 10;
+.transition(0.5s, ease-in-out);
+
+	&.side-closed {
+	left: 0px;
+	}
+	
+	&.side-open {
+	left: 300px;
+	}
+
+	small {
+	font-size: 10px;
+	line-height: 14px;
+	color: @darkGray;
+	}
+	
+	.social {
+	padding-bottom: 10px;
+		a {
+		margin-right: 3px;
+		color: @darkGray;
+		font-size: 20px;
+			span {
+			display: none;
+			}
+			
+			&:hover, &:active, &:focus {
+			color: @gray;
+			}
+		}
+	}
+	
+}

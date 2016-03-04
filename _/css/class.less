@@ -1,0 +1,55 @@
+@darkGray: #3c3c3c;
+@liteGray: #ebebeb;
+@gray: #b2b2b2;
+@black: #333333;
+@radius: 10px;
+@base-size: 10px;
+@base-font: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@base-font-lite: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+.base-font-family {
+font-family: @base-font;
+}
+
+.icon {
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.font-size (@size: 1) {
+font-size: @base-size * @size;
+}
+.no-txt-dec {
+text-decoration: none;
+}
+.underline {
+text-decoration: underline;
+}
+.trans-bg(@color: white, @alpha: 1) {
+background-color: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+}
+
+.bgsize-cover {
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+.bgsize-contain {
+-webkit-background-size: contain;
+background-size: contain;
+}
+
+h1, h2, h3 {
+font-family: @base-font-lite;
+font-weight: 300;
+letter-spacing: 0.08em;
+}

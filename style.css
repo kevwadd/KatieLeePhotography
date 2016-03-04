@@ -1,0 +1,14 @@
+/*   
+Theme Name: Katie Lee Photography
+Theme URI: http://katieleephotography.com
+Description: 2014 Theme for Katie Lee Photography website
+Author: Kevin Waddell
+Author URI: http://www.kw-design.co.uk
+Version: 1
+*/
+
+/* RESET */
+@import url('_/css/normalize.css');
+
+/* STYLES */
+@import url('_/css/style.css?v=1');

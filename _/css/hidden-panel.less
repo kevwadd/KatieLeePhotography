@@ -1,0 +1,84 @@
+.side-panel {
+position: fixed;
+top: 0; left: 0; bottom: 0;
+width: 300px;
+height: 100%;
+min-height: 600px;
+background-color: @darkGray;
+.inner-shadow(0, 0, 10px, 0.7);
+overflow-y: auto;
+
+	.side-content {
+	padding: 30px;
+	.transition(0.5s, ease-in-out);	
+	
+		h2 {
+		font-weight: normal;
+		color: @gray;
+		margin: 0px 0px 10px 0px;
+		}
+		
+		a.email {
+		display: block;
+		background-color: white;
+		color: @darkGray;
+		padding: 10px;
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: 12px;
+		text-decoration: none;
+			i {
+			float: left;
+			}
+			
+			&:hover, &:active {
+			background-color: @gray;
+			}
+		}
+		
+		span.tel {
+		display: block;
+		background-color: white;
+		padding: 10px;
+		text-align: center;
+		margin-bottom: 10px;
+		color: @darkGray;
+			i {
+			float: left;
+			}
+		}
+	}
+
+	&.side-closed {
+	z-index: 2;
+		.side-content {
+		.opacity(0.0);
+		}
+	}
+
+	&.side-open {
+	z-index: 5;
+		.side-content {
+		.opacity(1.0);
+		}
+	}
+	
+	.close {
+	position: absolute;
+	left: 20px; bottom: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+	line-height: 30px;
+	color: @darkGray;
+	background-color: @gray;
+	text-decoration: none;
+	.drop-shadow( 0, 0, 10px, 0.7);
+		&:hover {
+		background-color: @darkGray;
+		color: @gray;
+		}
+	}
+}

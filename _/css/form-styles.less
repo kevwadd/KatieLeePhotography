@@ -1,0 +1,156 @@
+#contact-form {
+
+	.gform_confirmation_wrapper {
+		p {
+		color: white;
+		}
+		
+		a {
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		background-color: white;
+		color: @darkGray;
+		position: relative;
+		padding-left: 10px;
+		text-decoration: none;
+			&:hover, &:active, &:focus {
+			background-color: @liteGray;
+			}
+			
+			i {
+			float: right;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			color: @darkGray;
+			}
+		}
+	}
+	
+	.gform_wrapper {
+		overflow: inherit;
+		
+		h1, h2, h3 {
+		font-weight: normal;
+		border: none;
+		outline: none;
+		background: none;
+		color: @gray;
+		}
+		
+		&:focus {
+		outline: 0;
+		}
+		
+		.validation_error {
+		font-size: 12px;
+		color: red;
+		margin-bottom: 10px;
+		}
+		
+		ul {
+		margin: 0 !important;
+		list-style-type: none;
+		text-indent: 0;
+		}
+		
+		li {
+		margin-left: 0 !important;
+		list-style-type: none !important;
+		list-style-image: none !important;
+		list-style: none !important;
+		overflow: visible;
+		margin-bottom: 10px;
+		
+			&.gfield {
+			clear: both;
+			}
+			
+			.gfield_label {
+			color: @gray;
+			height: 20px;
+			display: block;
+			font-size: 12px;
+			}
+			
+			&.gfield_error {
+			padding: 10px;
+			background-color: @gray;
+			
+				.gfield_label {
+				color: red;
+				}
+				
+				.validation_message {
+				font-size: 12px;
+				color: red;
+				padding-top: 5px;
+				}
+			}
+		}
+
+		form {
+		text-align: left;
+			
+			input[type=text],
+			input[type=email] {
+				outline-style: none;
+				font-size: 11px;
+				font-family: inherit;
+				padding: 5px;
+				letter-spacing: normal;
+				.box-sizing;
+				border: none;
+				width: 100%;
+				height: 30px;
+			}
+			
+			img.gform_ajax_spinner {
+			display: block;
+			margin: 10px auto 0px;
+			}
+			
+			textarea {
+			outline-style: none;
+			font-size: 11px;
+			font-family: inherit;
+			letter-spacing: normal;
+			padding: 4px;
+			resize: none;
+			border: none;
+			.box-sizing;
+			width: 100%;
+			height: 100px;
+			.transition;
+				&:focus {
+				height: 200px;
+				}
+			}
+			
+			.gform_button {
+			display: block;
+			border: none;
+			background-color: @gray;
+			height: 30px;
+			width: 100%;
+				&:hover, &:active, &:focus {
+				background-color: white;
+				}
+			}
+
+		}
+	
+	}
+
+
+.gform_wrapper ul li:before,
+.gform_wrapper ul li:after,
+.gform_wrapper ul.gform_fields {
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+}
+	
+}
